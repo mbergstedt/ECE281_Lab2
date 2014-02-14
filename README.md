@@ -18,6 +18,7 @@ Adder Testbench:
 ![alt text](https://github.com/mbergstedt/ECE281_Lab2/blob/master/Testbench_Screenshot.JPG?raw=true)
 ####Lab
 Lab Testbench:
+
 ![alt text](https://github.com/mbergstedt/ECE281_Lab2/blob/master/Lab2_Screenshot.JPG?raw=true)
 
 After getting the prelab adder to work, I just included it as a component in the lab.  I then made four instantiations
