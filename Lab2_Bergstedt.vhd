@@ -53,7 +53,7 @@ begin
 
 -- instatiate 4 full adders
 Bit0: component Full_Adder
-	port map (Cin => 0,
+	port map (Cin => '0',
 				 A => Ain(0),
 				 B => Bin(0),
 				 Cout => Cover,
