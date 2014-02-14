@@ -2,12 +2,19 @@ ECE281_Lab2
 ===========
 ####Prelab
 Truth Table:
+
 ![alt text](https://github.com/mbergstedt/ECE281_Lab2/blob/master/TruthTable.JPG?raw=true)
+
 Schematic:
+
 ![alt text](https://github.com/mbergstedt/ECE281_Lab2/blob/master/Schematic.JPG?raw=true)
+
 Interface:
+
 ![alt text](https://github.com/mbergstedt/ECE281_Lab2/blob/master/Interface.JPG?raw=true)
+
 Adder Testbench:
+
 ![alt text](https://github.com/mbergstedt/ECE281_Lab2/blob/master/Testbench_Screenshot.JPG?raw=true)
 ####Lab
 Lab Testbench:
