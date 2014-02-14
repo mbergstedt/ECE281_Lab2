@@ -44,6 +44,7 @@ ARCHITECTURE behavior OF Lab2_Testbench IS
     PORT(
          Ain : IN  std_logic_vector(3 downto 0);
          Bin : IN  std_logic_vector(3 downto 0);
+			Button : IN std_logic;
          Sum : OUT  std_logic_vector(3 downto 0)
         );
     END COMPONENT;
@@ -52,6 +53,7 @@ ARCHITECTURE behavior OF Lab2_Testbench IS
    --Inputs
    signal Ain : std_logic_vector(3 downto 0) := (others => '0');
    signal Bin : std_logic_vector(3 downto 0) := (others => '0');
+	signal Button : std_logic := '0';
 
  	--Outputs
    signal Sum : std_logic_vector(3 downto 0);
@@ -62,6 +64,7 @@ BEGIN
    uut: Lab2_Bergstedt PORT MAP (
           Ain => Ain,
           Bin => Bin,
+			 Button => Button,
           Sum => Sum
         );
 
