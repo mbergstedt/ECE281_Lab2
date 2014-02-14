@@ -46,8 +46,8 @@ component Full_Adder is
 				Sum : out STD_LOGIC);
 end component Full_Adder;
 
--- create an internal wire for the carry between adders
-signal Cover : std_logic;
+-- create internal wires for the carry between adders
+signal Co0, Co1, Co2, Co3 : std_logic;
 
 begin
 
@@ -56,28 +56,28 @@ Bit0: component Full_Adder
 	port map (Cin => '0',
 				 A => Ain(0),
 				 B => Bin(0),
-				 Cout => Cover,
+				 Cout => Co0,
 				 Sum => Sum(0));
 	
 Bit1: component Full_Adder
-	port map (Cin => Cover,
+	port map (Cin => Co0,
 				 A => Ain(1),
 				 B => Bin(1),
-				 Cout => Cover,
+				 Cout => Co1,
 				 Sum => Sum(1));
 
 Bit2: component Full_Adder
-	port map (Cin => Cover,
+	port map (Cin => Co1,
 				 A => Ain(2),
 				 B => Bin(2),
-				 Cout => Cover,
+				 Cout => Co2,
 				 Sum => Sum(2));
 
 Bit3: component Full_Adder
-	port map (Cin => Cover,
+	port map (Cin => Co2,
 				 A => Ain(3),
 				 B => Bin(3),
-				 Cout => Cover,
+				 Cout => Co3,
 				 Sum => Sum(3));
 
 end Behavioral;
